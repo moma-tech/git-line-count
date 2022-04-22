@@ -1,0 +1,12 @@
+test-project/
+diff-line: 11027
+stat-line: 11015
+-----------------------------
+test-project-2/
+diff-line: 9253
+stat-line: 9243
+-----------------------------
+test-project-3/
+diff-line: 23802
+stat-line: 23760
+-----------------------------
