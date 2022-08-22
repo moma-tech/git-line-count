@@ -26,6 +26,7 @@
 基于git命令的前提，是需要先把项目clone到本地。  
 然后通过git的diff命令，进行文件之间的比较，快速得到总的代码行数。  
 具体的步骤如下：  
+
 ## clone项目
 ```shell
 git clone -b <branchName> https://oauth2:<authToken>@test.gitlab.com/testproject.git
@@ -33,7 +34,8 @@ git clone -b <branchName> https://oauth2:<authToken>@test.gitlab.com/testproject
 - git clone: Clone命令
 - -b <branchName>：指定分支
 - http://....：仓库地址
-- oauth2:<authToken>：通过配置的personal Token实现免登陆
+- oauth2:<authToken>：通过配置的personal Token实现免登陆  
+
 ## 使用git diff命令
 ```
 cd testproject
@@ -61,6 +63,7 @@ git ls-files｜ xargs wc -l | tail -1
 ![image](./imgs/git-lsfile.png)
 - 此处显示结果**4623**行，比git diff少一行    
 - 原因是wc -l根据换行符计算行数，如果文件最后一行没有换行符的话，会导致少一行  
+
 # 结论及扩展
 - 使用git diff命令更准确一些
 - 当统计多个项目的时候，可以通过shell脚本，for循环，结果输出再汇总的方式完成代码统计
